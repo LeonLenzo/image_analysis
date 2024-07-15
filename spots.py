@@ -6,7 +6,7 @@ from skimage import morphology
 import pandas as pd
 
 def normalize_hue(h):
-    # Normalize hue from [0, 360] to [0, 179]
+    # Normalize hue from [0, 255] to [0, 179]
     return int(h * 179 / 255)
 
 # Function to process a single image
